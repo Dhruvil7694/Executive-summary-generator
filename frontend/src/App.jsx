@@ -127,13 +127,15 @@ const App = () => {
     setSelectedFile(file);
   };
 
-  const uploadFile = async () => {
-    if (!selectedFile) {
-      setError("No file selected.");
-      return;
-    }
-  
-    const formData = new FormData();
+  const backendUrl = "https://executive-summary-generator.onrender.com"; // Replace with your actual backend URL
+
+const uploadFile = async () => {
+  if (!selectedFile) {
+    setError("No file selected.");
+    return;
+  }
+
+  const formData = new FormData();
     formData.append("file", selectedFile);
   
     try {
@@ -156,6 +158,7 @@ const App = () => {
       setIsLoading(false);
     }
   };
+
   
 
   const getStatusColor = (stage) => {
