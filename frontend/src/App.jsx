@@ -156,7 +156,6 @@ const App = () => {
       setIsLoading(false);
     }
   };
-
   
 
   const getStatusColor = (stage) => {
