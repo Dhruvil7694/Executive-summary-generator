@@ -6,6 +6,7 @@ transformers
 sentence-transformers
 rouge-score
 textstat
+pytesseract
 langdetect
 nltk
 gtts
