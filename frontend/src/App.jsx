@@ -39,7 +39,7 @@ const App = () => {
   const [serverStatus, setServerStatus] = useState({ status: "checking", lastChecked: null });
   
   const API_BASE_URL = "https://executive-summary-generator.onrender.com";
-
+  console.log("Attempting to connect to:", API_BASE_URL);
   // Add drag and drop handlers
   const handleDrag = (e) => {
     e.preventDefault();
