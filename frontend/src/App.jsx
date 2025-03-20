@@ -127,37 +127,36 @@ const App = () => {
     setSelectedFile(file);
   };
 
-  const backendUrl = "https://executive-summary-generator.onrender.com"; // Replace with your actual backend URL
 
-const uploadFile = async () => {
-  if (!selectedFile) {
-    setError("No file selected.");
-    return;
-  }
-
-  const formData = new FormData();
-    formData.append("file", selectedFile);
-  
-    try {
-      setIsLoading(true);
-      const response = await fetch(`${backendUrl}/api/upload`, {
-        method: "POST",
-        body: formData,
-      });
-  
-      const data = await response.json();
-      if (response.ok) {
-        setFileId(data.fileId);
-        setStatus("Processing...");
-      } else {
-        setError(data.error || "Failed to upload");
-      }
-    } catch (error) {
-      setError("Network error. Check if the backend is running.");
-    } finally {
-      setIsLoading(false);
+  const uploadFile = async () => {
+    if (!selectedFile) {
+      setError("No file selected.");
+      return;
     }
-  };
+  
+    const formData = new FormData();
+      formData.append("file", selectedFile);
+    
+      try {
+        setIsLoading(true);
+        const response = await fetch(`${backendUrl}/api/upload`, {
+          method: "POST",
+          body: formData,
+        });
+    
+        const data = await response.json();
+        if (response.ok) {
+          setFileId(data.fileId);
+          setStatus("Processing...");
+        } else {
+          setError(data.error || "Failed to upload");
+        }
+      } catch (error) {
+        setError("Network error. Check if the backend is running.");
+      } finally {
+        setIsLoading(false);
+      }
+    };
 
   
 
