@@ -26,7 +26,6 @@ import Findings from './components/Findings';
 import Recommendations from './components/Recommendations';
 
 
-
 const App = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [fileId, setFileId] = useState(null);
@@ -39,6 +38,7 @@ const App = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [serverStatus, setServerStatus] = useState({ status: "checking", lastChecked: null });
   
+  const API_BASE_URL = "https://executive-summary-generator.onrender.com";
 
   // Add drag and drop handlers
   const handleDrag = (e) => {
@@ -90,7 +90,7 @@ const App = () => {
   // Server status check function
   const checkServerStatus = async () => {
     try {
-      const response = await fetch("http://localhost:8000/api/test");
+      const response = await fetch(`${API_BASE_URL}/api/test`);
       const isOnline = response.status === 200;
       setServerStatus({
         status: isOnline ? "online" : "offline",
@@ -144,7 +144,7 @@ const App = () => {
     formData.append("file", selectedFile);
 
     try {
-      const response = await fetch(`${backendUrl}/api/upload`, {
+      const response = await fetch(`${API_BASE_URL}/api/upload`, {
         method: "POST",
         body: formData
       });
@@ -196,7 +196,7 @@ const App = () => {
 
     const checkStatus = async () => {
       try {
-        const statusResponse = await fetch(`http://localhost:8000/api/status/${fileId}`);
+        const statusResponse = await fetch(`${API_BASE_URL}/api/status/${fileId}`);
         const statusData = await statusResponse.json();
         
         setProgress(statusData.progress);
@@ -224,7 +224,7 @@ const App = () => {
     if (!fileId) return;
 
     try {
-      const response = await fetch(`http://localhost:8000/api/download/${fileId}`);
+      const response = await fetch(`${API_BASE_URL}/api/download/${fileId}`);
       if (!response.ok) {
         throw new Error('Download failed');
       }
