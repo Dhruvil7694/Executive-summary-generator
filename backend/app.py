@@ -10,7 +10,7 @@ from datetime import datetime
 from main import DocumentProcessor  # Import DocumentProcessor class
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "https://executive-summary-generator-1.onrender.com/"}})
 
 UPLOAD_FOLDER = 'uploads'
 RESULTS_FOLDER = 'results'
