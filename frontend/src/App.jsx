@@ -25,7 +25,7 @@ import ResultsSection from './components/ResultsSection';
 import Findings from './components/Findings';
 import Recommendations from './components/Recommendations';
 
-
+const backendUrl = "https://executive-summary-generator.onrender.com"; 
 
 const App = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -127,36 +127,32 @@ const App = () => {
     setSelectedFile(file);
   };
 
-  const handleUpload = async () => {
+  const uploadFile = async () => {
     if (!selectedFile) {
-      setError("Please select a PDF file first");
+      setError("No file selected.");
       return;
     }
-    
-    setIsLoading(true);
-    setError(null);
-    setProgress(0);
-    setReport(null);
-    
+  
     const formData = new FormData();
     formData.append("file", selectedFile);
-
+  
     try {
-      const response = await fetch("http://localhost:8000/api/upload", {
+      setIsLoading(true);
+      const response = await fetch(`${backendUrl}/api/upload`, {
         method: "POST",
-        body: formData
+        body: formData,
       });
-      
+  
+      const data = await response.json();
       if (response.ok) {
-        const data = await response.json();
         setFileId(data.fileId);
-        setStatus("Processing started");
-        // Remove simulated progress, rely on actual backend status
+        setStatus("Processing...");
       } else {
-        throw new Error("Upload failed");
+        setError(data.error || "Failed to upload");
       }
-    } catch (err) {
-      setError("Failed to upload file. Please try again.");
+    } catch (error) {
+      setError("Network error. Check if the backend is running.");
+    } finally {
       setIsLoading(false);
     }
   };
