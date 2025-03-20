@@ -25,7 +25,7 @@ This application uses a modern stack with completely separate frontend and backe
 
 ## 💻 Live Demo
 
-- Frontend: [https://executive-summary-generator-1.onrender.com](https://executive-summary-generator-1.onrender.com)
+- Click here👉: [https://executive-summary-generator-1.onrender.com](https://executive-summary-generator-1.onrender.com)
 
 ## 📄 How It Works
 
