@@ -144,7 +144,7 @@ const App = () => {
     formData.append("file", selectedFile);
 
     try {
-      const response = await fetch("`${backendUrl}/api/upload", {
+      const response = await fetch(`${backendUrl}/api/upload`, {
         method: "POST",
         body: formData
       });
