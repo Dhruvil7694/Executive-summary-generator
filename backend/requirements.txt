@@ -1,0 +1,8 @@
+flask
+flask-cors
+pymongo
+pdfplumber
+transformers
+langdetect
+gtts
+torch

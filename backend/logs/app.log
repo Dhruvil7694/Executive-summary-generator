@@ -1,0 +1,88 @@
+2025-01-18 11:40:41,850 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-01-18 11:40:41,850 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-18 11:40:56,236 - absl - INFO - Using default tokenizer.
+2025-01-18 11:42:41,607 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-01-18 11:42:41,608 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-18 11:42:54,207 - absl - INFO - Using default tokenizer.
+2025-01-18 11:42:54,820 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.201:5000
+2025-01-18 11:42:54,822 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-18 11:42:54,823 - werkzeug - INFO -  * Restarting with stat
+2025-01-18 11:43:07,133 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-01-18 11:43:07,134 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-18 11:43:21,819 - absl - INFO - Using default tokenizer.
+2025-01-18 11:43:22,411 - werkzeug - WARNING -  * Debugger is active!
+2025-01-18 11:43:22,417 - werkzeug - INFO -  * Debugger PIN: 254-703-451
+2025-01-18 11:45:33,962 - werkzeug - INFO -  * Detected change in 'D:\\ML Projects\\z\\backend\\app.py', reloading
+2025-01-18 11:45:35,095 - werkzeug - INFO -  * Restarting with stat
+2025-01-18 11:48:59,075 - root - ERROR - Error loading model: maximum recursion depth exceeded
+2025-01-18 11:49:57,195 - root - ERROR - Error loading model: maximum recursion depth exceeded
+2025-01-18 11:50:53,293 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-01-18 11:50:53,294 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-18 11:51:10,747 - absl - INFO - Using default tokenizer.
+2025-01-18 11:51:11,336 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.201:5000
+2025-01-18 11:51:11,337 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-18 11:51:11,337 - werkzeug - INFO -  * Restarting with stat
+2025-01-18 11:51:25,748 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-01-18 11:51:25,749 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-18 12:04:31,184 - root - ERROR - Error loading model: maximum recursion depth exceeded
+2025-01-18 12:05:47,258 - root - ERROR - Error loading model: maximum recursion depth exceeded
+2025-01-18 12:07:57,924 - root - ERROR - Error loading model: maximum recursion depth exceeded
+2025-01-18 12:11:47,114 - root - INFO - Upload configuration initialized
+2025-01-18 12:11:47,115 - root - ERROR - Failed to create summarizer: ProcessingConfig.__init__() got an unexpected keyword argument 'model_load_timeout'
+Traceback (most recent call last):
+  File "D:\ML Projects\z\backend\app.py", line 128, in create_summarizer
+    config = ProcessingConfig(
+             ^^^^^^^^^^^^^^^^^
+TypeError: ProcessingConfig.__init__() got an unexpected keyword argument 'model_load_timeout'
+2025-01-18 12:11:47,116 - root - ERROR - Server initialization failed: ProcessingConfig.__init__() got an unexpected keyword argument 'model_load_timeout'
+Traceback (most recent call last):
+  File "D:\ML Projects\z\backend\app.py", line 323, in <module>
+    summarizer = create_summarizer()
+                 ^^^^^^^^^^^^^^^^^^^
+  File "D:\ML Projects\z\backend\app.py", line 128, in create_summarizer
+    config = ProcessingConfig(
+             ^^^^^^^^^^^^^^^^^
+TypeError: ProcessingConfig.__init__() got an unexpected keyword argument 'model_load_timeout'
+2025-01-18 12:12:46,318 - root - INFO - Upload configuration initialized
+2025-01-18 12:12:51,404 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-01-18 12:12:51,405 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-18 12:13:11,506 - absl - INFO - Using default tokenizer.
+2025-01-18 12:13:12,013 - root - ERROR - Failed to create summarizer: Model initialization failed
+Traceback (most recent call last):
+  File "D:\ML Projects\z\backend\app.py", line 141, in create_summarizer
+    raise RuntimeError("Model initialization failed")
+RuntimeError: Model initialization failed
+2025-01-18 12:13:12,014 - root - ERROR - Server initialization failed: Model initialization failed
+Traceback (most recent call last):
+  File "D:\ML Projects\z\backend\app.py", line 322, in <module>
+    summarizer = create_summarizer()
+                 ^^^^^^^^^^^^^^^^^^^
+  File "D:\ML Projects\z\backend\app.py", line 141, in create_summarizer
+    raise RuntimeError("Model initialization failed")
+RuntimeError: Model initialization failed
+2025-01-18 12:19:37,562 - root - INFO - Upload configuration initialized
+2025-01-18 12:19:41,082 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-01-18 12:19:41,083 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-18 12:20:03,440 - absl - INFO - Using default tokenizer.
+2025-01-18 12:20:03,975 - root - ERROR - Failed to create summarizer: Model initialization failed
+Traceback (most recent call last):
+  File "D:\ML Projects\z\backend\app.py", line 141, in create_summarizer
+    raise RuntimeError("Model initialization failed")
+RuntimeError: Model initialization failed
+2025-01-18 12:20:03,977 - root - ERROR - Server initialization failed: Model initialization failed
+Traceback (most recent call last):
+  File "D:\ML Projects\z\backend\app.py", line 322, in <module>
+    summarizer = create_summarizer()
+                 ^^^^^^^^^^^^^^^^^^^
+  File "D:\ML Projects\z\backend\app.py", line 141, in create_summarizer
+    raise RuntimeError("Model initialization failed")
+RuntimeError: Model initialization failed
+2025-01-18 12:20:30,177 - root - ERROR - Error loading model: maximum recursion depth exceeded
+2025-01-18 12:24:23,412 - root - ERROR - Error loading model: maximum recursion depth exceeded
+2025-01-18 13:37:37,708 - root - ERROR - Error loading model: maximum recursion depth exceeded

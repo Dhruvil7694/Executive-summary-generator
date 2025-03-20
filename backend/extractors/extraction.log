@@ -1,0 +1,19 @@
+2025-01-03 16:12:37,608 - INFO - [TextExtraction] - Starting text extraction...
+2025-01-03 16:12:38,557 - INFO - [TextExtraction] - Processing extracted text...
+2025-01-03 16:12:38,584 - INFO - [TextExtraction] - 
+Extraction Statistics:
+2025-01-03 16:12:38,585 - INFO - [TextExtraction] - total_pages: 5
+2025-01-03 16:12:38,585 - INFO - [TextExtraction] - processed_pages: 5
+2025-01-03 16:12:38,586 - INFO - [TextExtraction] - ocr_used_count: 0
+2025-01-03 16:12:38,587 - INFO - [TextExtraction] - extraction_errors: 0
+2025-01-03 16:12:38,587 - INFO - [TextExtraction] - Saving original extracted text to ../output\extracted_text_20250103_161238.txt
+2025-01-03 16:12:38,597 - INFO - [TextExtraction] - Saving processed text to ../output\processed_text_20250103_161238.txt
+2025-01-03 16:12:38,601 - INFO - [TextExtraction] - Saving extraction report to ../output\extraction_report_20250103_161238.json
+2025-01-03 16:12:38,603 - INFO - [TextExtraction] - 
+Processed Text:
+
+2025-01-03 16:12:38,605 - INFO - [TextExtraction] - 
+Processing Summary:
+2025-01-03 16:12:38,606 - INFO - [TextExtraction] - - Original text size: 7858 characters
+2025-01-03 16:12:38,607 - INFO - [TextExtraction] - - Processed text size: 7373 characters
+2025-01-03 16:12:38,607 - INFO - [TextExtraction] - - Processing time: 1.00 seconds
