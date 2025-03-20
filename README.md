@@ -80,11 +80,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-## 📱 Screenshots
 
-![Dashboard View](/screenshots/dashboard.png)
-![Processing View](/screenshots/processing.png)
-![Results View](/screenshots/results.png)
 
 ## 🗺️ Roadmap
 
@@ -104,4 +100,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📞 Contact
 
-For questions or support, please open an issue or contact [your@email.com](mailto:your@email.com).
+For questions or support, please open an issue or contact [your@email.com](mailto:dhruvil7694@email.com).
