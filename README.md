@@ -100,4 +100,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📞 Contact
 
-For questions or support, please open an issue or contact [your@email.com](mailto:dhruvil7694@email.com).
+For questions or support, please open an issue or contact [dhruvil7694@email.com](mailto:dhruvil7694@email.com).
